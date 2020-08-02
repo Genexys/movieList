@@ -30,7 +30,15 @@ class List extends Component {
             return <div>Loading...</div>
         }
 
-        return data.map(movie => <Card key={movie.id} movie={movie}/>)
+        return (
+            <div className="row justify-content-center">
+                {data.map(movie =>
+                    <div key={movie.id} className="col-7 col-sm-6 col-lg-4 col-xl-3">
+                        <Card movie={movie}/>
+                    </div>
+                )}
+            </div>
+        )
     }
 }
 

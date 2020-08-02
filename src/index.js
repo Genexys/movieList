@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import List from "./containers/List";
-import "bootstrap/dist/css/bootstrap-grid.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 
 const App = () => {
     return (
         <div className='container-fluid'>
+            <nav className="navbar sticky-top navbar-light bg-dark">
+                <h1 className="navbar-brand mb-0 h1 text-light">Navbar</h1>
+            </nav>
             <List />
         </div>
     );
